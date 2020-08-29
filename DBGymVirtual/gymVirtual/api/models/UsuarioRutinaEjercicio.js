@@ -8,21 +8,26 @@
 module.exports = {
 
   attributes: {
+    id_usuarioRutEjer:{
+      type: 'number',
+      autoIncrement:true,
+      columnName:'idUsuRutEjer'
+    },
 
-    //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
-    //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
-    //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
+    numRepEjecutadas:{
+      type: 'number',
+      defaultsTo: 0,
+      columnName:'repetEjerRutRealizadas'
+    },
 
+    usuarioRutina:{
+      model: 'usuarioRutina'
+    },
 
-    //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
-    //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
-    //  ╚═╝╩ ╩╚═╝╚═╝═╩╝╚═╝
-
-
-    //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
-    //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
-    //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
-
+    ejercicioRutina:{
+      model: 'ejercicioRutina'
+    }
+  
   },
 
 };

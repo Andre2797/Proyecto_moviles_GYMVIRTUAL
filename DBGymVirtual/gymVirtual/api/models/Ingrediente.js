@@ -1,5 +1,5 @@
 /**
- * Rol.js
+ * Ingrediente.js
  *
  * @description :: A model definition represents a database table/collection.
  * @docs        :: https://sailsjs.com/docs/concepts/models-and-orm/models
@@ -8,22 +8,22 @@
 module.exports = {
 
   attributes: {
-    id_rol:{
+
+    id_ingrediente:{
       type: 'number',
       autoIncrement:true,
-      required: true,
-      columnName: 'idRol',
+      columnName:'idIngrediente'
     },
-    nombre_rol:{
+
+    nombre_ingred:{
       type: 'string',
-      required: true,
-      columnName: 'nombreRol',
+      required:true,
+      columnName:'nombreIngrediente',
       maxLength:50
     },
-    
-    rolUsuarios:{
-      collection: 'rolUsuario',
-      via: 'rol'
+  
+    receta:{
+      model: 'receta'
     }
   },
 
