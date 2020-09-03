@@ -1,5 +1,6 @@
 package com.example.gymvirtual
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
@@ -60,7 +61,18 @@ class FullscreenActivity : AppCompatActivity() {
         // Upon interacting with UI controls, delay any scheduled hide()
         // operations to prevent the jarring behavior of controls going away
         // while interacting with the UI.
-        dummy_button.setOnTouchListener(mDelayHideTouchListener)
+        //dummy_button.setOnTouchListener(mDelayHideTouchListener)
+        dummy_button.setOnClickListener {
+            abrirAlturaPractica()
+        }
+
+    }
+    fun abrirAlturaPractica(){
+        val intentExplicito = Intent(
+            this,
+            Act_AlturaLogin::class.java
+        )
+        startActivity(intentExplicito)
     }
 
     override fun onPostCreate(savedInstanceState: Bundle?) {
