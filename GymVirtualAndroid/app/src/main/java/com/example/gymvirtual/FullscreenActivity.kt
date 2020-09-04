@@ -62,15 +62,26 @@ class FullscreenActivity : AppCompatActivity() {
         // operations to prevent the jarring behavior of controls going away
         // while interacting with the UI.
         //dummy_button.setOnTouchListener(mDelayHideTouchListener)
-        dummy_button.setOnClickListener {
-            abrirAlturaPractica()
+        full_regiter.setOnClickListener {
+            abrirNombre_Registro()
+        }
+
+        full_login.setOnClickListener{
+                abrirlogin()
         }
 
     }
-    fun abrirAlturaPractica(){
+    fun abrirNombre_Registro(){
         val intentExplicito = Intent(
             this,
-            Act_AlturaLogin::class.java
+            Act_Nombre_Registro::class.java
+        )
+        startActivity(intentExplicito)
+    }
+    fun abrirlogin(){
+        val intentExplicito = Intent(
+            this,
+            Act_Login_Gym::class.java
         )
         startActivity(intentExplicito)
     }
