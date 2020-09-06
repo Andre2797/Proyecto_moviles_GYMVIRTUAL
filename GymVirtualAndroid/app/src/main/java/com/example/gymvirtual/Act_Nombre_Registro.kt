@@ -10,7 +10,7 @@ class Act_Nombre_Registro : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_act__nombre__registro)
         btn_nombre.setOnClickListener(){
-            abriredad()
+            enviarNombre()
         }
     }
     fun abriredad(){
@@ -18,6 +18,15 @@ class Act_Nombre_Registro : AppCompatActivity() {
             this,
             Act_edad_registro::class.java
         )
+        startActivity(intentExplicito)
+    }
+
+    fun enviarNombre(){
+        val intentExplicito = Intent(
+            this,
+            Act_edad_registro::class.java
+        )
+        intentExplicito.putExtra("nombre", et_nombre.text.toString())
         startActivity(intentExplicito)
     }
 }

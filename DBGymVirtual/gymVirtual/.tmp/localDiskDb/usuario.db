@@ -1,1 +1,4 @@
 {"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
+{"sexo":"M","createdAt":1599428144681,"updatedAt":1599428144681,"id":1,"nombreUsuario":"Andrea","edadUsuario":22,"pesoUsuario":55,"alturaUsuario":161,"correoUsuario":"nicole.ontaneda@epn.edu.ec","contraseniaUsuario":"123","idUsuario":0,"sexoUsuario":"NA","_id":1}
+{"createdAt":1599428403839,"updatedAt":1599428403839,"id":2,"nombreUsuario":"Nicole Ontaneda","edadUsuario":22,"pesoUsuario":55,"alturaUsuario":161,"correoUsuario":"nicole.ontaneda@epn.edu.ec","sexoUsuario":"M","contraseniaUsuario":"123","idUsuario":0,"_id":2}
+{"createdAt":1599428638475,"updatedAt":1599428638475,"id":3,"nombreUsuario":"Katy","edadUsuario":29,"pesoUsuario":55,"alturaUsuario":167,"correoUsuario":"andylove1527@gmail.com","sexoUsuario":"M","contraseniaUsuario":"123","idUsuario":0,"_id":3}
