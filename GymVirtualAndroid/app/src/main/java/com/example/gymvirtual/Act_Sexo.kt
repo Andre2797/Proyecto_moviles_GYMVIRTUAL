@@ -5,11 +5,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_act__sexo_login.*
 
-class Act_SexoLogin : AppCompatActivity() {
+class Act_Sexo : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_act__sexo_login)
+        setContentView(R.layout.activity_act__sexo)
+
         btn_sexoSig.setOnClickListener {
             abrirBienvenido()
         }
