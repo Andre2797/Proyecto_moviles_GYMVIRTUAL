@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Act_peso_registro"></activity>
+        <activity android:name=".Act_Sexo"></activity>
+        <activity android:name=".Act_peso_registro" />
         <activity android:name=".Act_edad_registro" />
         <activity android:name=".Act_Login_Gym" />
         <activity android:name=".Act_Nombre_Registro" />

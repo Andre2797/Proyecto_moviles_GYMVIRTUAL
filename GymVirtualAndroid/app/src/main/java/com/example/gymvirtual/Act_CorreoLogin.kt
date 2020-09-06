@@ -17,7 +17,7 @@ class Act_CorreoLogin : AppCompatActivity() {
 fun abrirSexoLogin(){
     val intentExplicito = Intent(
         this,
-        Act_SexoLogin::class.java
+        Act_Sexo::class.java
     )
     startActivity(intentExplicito)
 }
