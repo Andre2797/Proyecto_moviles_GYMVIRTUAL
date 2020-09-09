@@ -26,7 +26,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/iv_superhero"
+        android:id="@+id/iv_hombre"
         android:layout_width="174dp"
         android:layout_height="171dp"
         android:layout_alignParentStart="true"
@@ -43,7 +43,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/iv_comic"
+        android:id="@+id/iv_mujer"
         android:layout_width="203dp"
         android:layout_height="159dp"
         android:layout_alignParentStart="true"
@@ -58,10 +58,10 @@
         app:civ_border_width="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_superhero" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_hombre" />
 
     <Button
-        android:id="@+id/btn_sexoSig"
+        android:id="@+id/btn_sexoSiguiente"
         android:layout_width="121dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -88,7 +88,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="12dp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_sexoSig"
+        app:layout_constraintBottom_toTopOf="@+id/btn_sexoSiguiente"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/diamond" />
