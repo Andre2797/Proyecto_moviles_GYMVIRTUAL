@@ -67,8 +67,10 @@ class FullscreenActivity : AppCompatActivity() {
         }
 
         full_login.setOnClickListener{
-                abrirlogin()
+                //abrirlogin()
+            abrirmenu()
         }
+
 
     }
     fun abrirNombre_Registro(){
@@ -81,7 +83,16 @@ class FullscreenActivity : AppCompatActivity() {
     fun abrirlogin(){
         val intentExplicito = Intent(
             this,
-            Act_Login_Gym::class.java
+           Act_Login_Gym::class.java
+
+        )
+        startActivity(intentExplicito)
+    }
+    fun abrirmenu(){
+        val intentExplicito = Intent(
+            this,
+            Actv_menu_principal::class.java
+
         )
         startActivity(intentExplicito)
     }

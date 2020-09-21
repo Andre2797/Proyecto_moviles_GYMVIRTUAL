@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.gymvirtual">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
@@ -11,10 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:usesCleartextTraffic="true"
-        >
-
-        <activity android:name=".Act_Sexo"></activity>
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Act_ejercicio"></activity>
+        <activity android:name=".Act_calendario" />
+        <activity android:name=".Actv_menu_principal" />
+        <activity android:name=".Act_Sexo" />
         <activity android:name=".Act_peso_registro" />
         <activity android:name=".Act_edad_registro" />
         <activity android:name=".Act_Login_Gym" />
@@ -30,6 +32,7 @@
             android:theme="@style/FullscreenTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
