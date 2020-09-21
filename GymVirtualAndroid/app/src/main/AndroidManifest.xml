@@ -13,7 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Actv_menu_principal"></activity>
+        <activity android:name=".Act_ejercicio"></activity>
+        <activity android:name=".Act_calendario" />
+        <activity android:name=".Actv_menu_principal" />
         <activity android:name=".Act_Sexo" />
         <activity android:name=".Act_peso_registro" />
         <activity android:name=".Act_edad_registro" />
