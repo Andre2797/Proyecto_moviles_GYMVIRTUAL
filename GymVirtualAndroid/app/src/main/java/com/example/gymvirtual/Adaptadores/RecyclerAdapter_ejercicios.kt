@@ -1,4 +1,4 @@
-package com.example.gymvirtual
+package com.example.gymvirtual.Adaptadores
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -9,6 +9,7 @@ import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.gymvirtual.R
 
 class adaptadorRecyclerView2(
     var contexto : Context,

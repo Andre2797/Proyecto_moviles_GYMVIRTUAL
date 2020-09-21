@@ -1,15 +1,9 @@
-package com.example.gymvirtual
+package com.example.gymvirtual.Menus
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TableLayout
-import androidx.appcompat.app.ActionBar
-import androidx.appcompat.app.ActionBar.TabListener
-import androidx.core.content.ContextCompat
-import androidx.viewpager.widget.ViewPager
-import com.google.android.material.badge.BadgeDrawable
-import com.google.android.material.tabs.TabItem
-import com.google.android.material.tabs.TabLayout
+import com.example.gymvirtual.PagerController
+import com.example.gymvirtual.R
 
 import kotlinx.android.synthetic.main.activity_actv_menu_principal.*
 import com.google.android.material.tabs.TabLayoutMediator

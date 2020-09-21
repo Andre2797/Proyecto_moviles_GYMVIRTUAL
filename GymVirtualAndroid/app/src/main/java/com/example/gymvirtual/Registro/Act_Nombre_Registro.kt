@@ -1,8 +1,9 @@
-package com.example.gymvirtual
+package com.example.gymvirtual.Login
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.gymvirtual.R
 import kotlinx.android.synthetic.main.activity_act__nombre__registro.*
 
 class Act_Nombre_Registro : AppCompatActivity() {

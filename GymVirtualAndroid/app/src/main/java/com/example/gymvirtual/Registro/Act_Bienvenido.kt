@@ -1,11 +1,21 @@
-package com.example.gymvirtual
+package com.example.gymvirtual.Login
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.WindowManager
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
+import android.widget.Button
+import android.widget.ImageView
+import com.airbnb.lottie.LottieAnimationView
+import com.example.gymvirtual.Actv_menu_principal
+import com.example.gymvirtual.R
 import com.github.kittinunf.fuel.httpPost
 import com.github.kittinunf.result.Result
+import kotlinx.android.synthetic.main.activity_act__bienvenido.*
+
 class Act_Bienvenido : AppCompatActivity() {
     var nombreCompartido: String ? = ""
     var edadCompartido: Int = 0
@@ -16,7 +26,19 @@ class Act_Bienvenido : AppCompatActivity() {
     val urlGeneral = "http://192.168.1.103:1337"
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        var topAnimation: Animation
+        var bottomAnimation: Animation
+        var imagenMov : LottieAnimationView
+        var textoBienvenido: ImageView
+        var btn_continuar: Button
+        var facebook: ImageView
+        var instagram: ImageView
+        var twitter: ImageView
+        var youtube: ImageView
+
         super.onCreate(savedInstanceState)
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN)
         setContentView(R.layout.activity_act__bienvenido)
         sexoCompartido = intent.getStringExtra("sexo")
         nombreCompartido = intent.getStringExtra("nombre")
@@ -68,5 +90,46 @@ class Act_Bienvenido : AppCompatActivity() {
                 }
             }
         }
+
+        tv_nombreBienvenido.text = nombreCompartido.toString()
+
+        //ANIMACIONES
+        topAnimation = AnimationUtils.loadAnimation(this,
+            R.anim.top_animation
+        )
+        bottomAnimation = AnimationUtils.loadAnimation(this,
+            R.anim.bottom_animation
+        )
+
+        //HOOKS
+        imagenMov  = findViewById(R.id.ilottie_gimnasio)
+        textoBienvenido = findViewById(R.id.iv_bienvenido)
+        btn_continuar = findViewById(R.id.btn_comenzar)
+        facebook = findViewById(R.id.iv_facebook)
+        instagram = findViewById(R.id.iv_instagram)
+        twitter = findViewById(R.id.iv_twitter)
+        youtube = findViewById(R.id.iv_youtube)
+
+        imagenMov.setAnimation(topAnimation)
+        textoBienvenido.setAnimation(bottomAnimation)
+        btn_continuar.setAnimation(bottomAnimation)
+
+        facebook.setAnimation(bottomAnimation)
+        instagram.setAnimation(topAnimation)
+        twitter.setAnimation(bottomAnimation)
+        youtube.setAnimation(topAnimation)
+
+        btn_comenzar.setOnClickListener {
+            abrirmenu()
+        }
+    }
+
+    fun abrirmenu(){
+        val intentExplicito = Intent(
+            this,
+            Actv_menu_principal::class.java
+
+        )
+        startActivity(intentExplicito)
     }
 }

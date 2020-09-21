@@ -1,10 +1,12 @@
-package com.example.gymvirtual
+package com.example.gymvirtual.Menus
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.view.View
+import com.example.gymvirtual.Act_Login_Gym
+import com.example.gymvirtual.R
 import kotlinx.android.synthetic.main.activity_fullscreen.*
 
 /**

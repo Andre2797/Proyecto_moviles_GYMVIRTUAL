@@ -1,4 +1,4 @@
-package com.example.gymvirtual
+package com.example.gymvirtual.MenusYFragmentos
 
 import android.R
 import android.os.Bundle
@@ -7,6 +7,9 @@ import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import com.example.gymvirtual.MenusYFragmentos.Frg_calendario
+import com.example.gymvirtual.MenusYFragmentos.Frg_nutricion
+import com.example.gymvirtual.MenusYFragmentos.frg_meses
 
 class PagerController(fa:FragmentActivity): FragmentStateAdapter(fa) {
 
@@ -19,7 +22,8 @@ class PagerController(fa:FragmentActivity): FragmentStateAdapter(fa) {
         return when(position){
             0 -> { frg_meses()}
             1 -> { Frg_calendario() }
-            2 -> {Frg_nutricion()}
+            2 -> { Frg_nutricion()
+            }
             else -> frg_meses()
         }
     }

@@ -1,11 +1,14 @@
-package com.example.gymvirtual
+package com.example.gymvirtual.MenusYFragmentos
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.gymvirtual.R
+import com.example.gymvirtual.Retos
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -71,6 +74,7 @@ class Frg_nutricion : Fragment(),OnCalendario  {
     }
 
     override fun onCalendarioItemClick(position: Int) {
-        TODO("Not yet implemented")
+        val intent= Intent(this.context,Act_MenuPrincipalNutricion::class.java)
+        startActivity(intent)
     }
 }
