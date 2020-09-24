@@ -22,17 +22,16 @@ module.exports = {
     },
 
     imagen_rec:{
-      //Como guardar una imagen..?? path? 
       type: 'string',
       required:false,
-      columnName:'ubImage'
+      columnName:'urlImage'
     },
 
     preparacion_rec:{
       type: 'string',
       required: true,
       columnName: 'preparacionRec',
-      maxLength: 500
+      maxLength: 50000
     },
 
     ingredientes:{

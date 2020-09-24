@@ -20,10 +20,10 @@ class Act_EjerCronometro : AppCompatActivity() {
 
     }
 
-    override onChronometerTick(var cronometro: Chronometer){
+    /*override onChronometerTick(var cronometro: Chronometer){
         var result: Long = SystemClock.elapsedRealtime()-chronometer.getBase()
         Toast.makeText(this, "time" + result),
-    }
+    }*/
 
 
 }

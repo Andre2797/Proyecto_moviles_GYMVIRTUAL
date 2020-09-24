@@ -10,7 +10,7 @@ import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.ImageView
 import com.airbnb.lottie.LottieAnimationView
-import com.example.gymvirtual.Actv_menu_principal
+import com.example.gymvirtual.Menus.Actv_menu_principal
 import com.example.gymvirtual.R
 import com.github.kittinunf.fuel.httpPost
 import com.github.kittinunf.result.Result

@@ -10,6 +10,7 @@ class RecetaHttp(
     var ingredientes: ArrayList<IngredienteHttp>? = null,
     ){
     override fun toString(): String {
-        return "El id de Receta ${id}, "
+        return "El id de Receta ${id}, nombre de la receta: ${nombre_rec}, imagen receta: ${imagen_rec}, " +
+                "preparación: ${preparacion_rec}, ingredientes: ${ingredientes}"
     }
     }

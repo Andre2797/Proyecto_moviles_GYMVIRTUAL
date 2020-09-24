@@ -9,9 +9,9 @@ import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.gymvirtual.OnCalendario
+import com.example.gymvirtual.Interfaces.OnCalendario
 import com.example.gymvirtual.R
-import com.example.gymvirtual.Retos
+//import com.example.gymvirtual.Retos
 
 class RecyclerAdaptador(
     var contexto : Context,
@@ -20,7 +20,7 @@ class RecyclerAdaptador(
     var onCalendario: OnCalendario
 ):RecyclerView.Adapter<RecyclerAdaptador.MyViewHolder>() {
 
-    lateinit var model:ArrayList<Retos>
+    //lateinit var model:ArrayList<Retos>
     lateinit var lsitener:View.OnClickListener
 
     inner class MyViewHolder(view: View) :

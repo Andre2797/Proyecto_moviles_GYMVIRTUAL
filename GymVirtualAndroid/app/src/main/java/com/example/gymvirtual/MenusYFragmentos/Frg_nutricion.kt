@@ -7,8 +7,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.gymvirtual.Adaptadores.RecyclerAdaptador
+import com.example.gymvirtual.Interfaces.OnCalendario
+import com.example.gymvirtual.Menus.Act_MenuPrincipalNutricion
 import com.example.gymvirtual.R
-import com.example.gymvirtual.Retos
+//import com.example.gymvirtual.Retos
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -19,11 +22,11 @@ import com.example.gymvirtual.Retos
  * Use the [Frg_nutricion.newInstance] factory method to
  * create an instance of this fragment.
  */
-class Frg_nutricion : Fragment(),OnCalendario  {
+class Frg_nutricion : Fragment(), OnCalendario {
     var titulos: ArrayList<String> = arrayListOf()
     var imagenesURL: ArrayList<String> = arrayListOf()
 
-    var listaRetos= arrayListOf<Retos>()
+    //var listaRetos= arrayListOf<Retos>()
     companion object{
         private const val ARG_OBJECT="object"
     }
@@ -74,7 +77,7 @@ class Frg_nutricion : Fragment(),OnCalendario  {
     }
 
     override fun onCalendarioItemClick(position: Int) {
-        val intent= Intent(this.context,Act_MenuPrincipalNutricion::class.java)
+        val intent= Intent(this.context, Act_MenuPrincipalNutricion::class.java)
         startActivity(intent)
     }
 }

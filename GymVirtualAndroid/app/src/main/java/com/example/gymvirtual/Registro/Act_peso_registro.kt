@@ -1,10 +1,9 @@
-package com.example.gymvirtual
+package com.example.gymvirtual.Login
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import kotlinx.android.synthetic.main.activity_act_edad_registro.*
+import com.example.gymvirtual.R
 import kotlinx.android.synthetic.main.activity_act_peso_registro.*
 
 class Act_peso_registro : AppCompatActivity() {

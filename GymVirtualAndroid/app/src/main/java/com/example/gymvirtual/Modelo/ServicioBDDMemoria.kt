@@ -14,7 +14,6 @@ class ServicioBDDMemoria (){
 
                 override fun fromJson(jv: JsonValue): IngredienteHttp {
                     return if (jv.obj?.get("receta") is Int) {
-                        //CREACION SIN PROBLEMA
                         IngredienteHttp(
                             jv.objInt("id"),
                             jv.objString("nombre_ingred"),

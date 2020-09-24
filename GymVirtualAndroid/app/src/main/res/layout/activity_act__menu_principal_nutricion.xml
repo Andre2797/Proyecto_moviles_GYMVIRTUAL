@@ -29,9 +29,9 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_menuPrincipal"
         android:layout_width="match_parent"
-        android:layout_height="573dp"
+        android:layout_height="491dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="1dp"
+        android:layout_marginBottom="83dp"
         android:clipToPadding="false"
         android:padding="4dp" />
 

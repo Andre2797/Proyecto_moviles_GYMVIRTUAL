@@ -10,12 +10,12 @@ import android.os.Bundle
 import android.util.Log
 import androidx.recyclerview.widget.RecyclerView
 import com.beust.klaxon.Klaxon
+import com.example.gymvirtual.Interfaces.goRecetas
 import com.example.gymvirtual.R
-import com.example.gymvirtual.goRecetas
 import com.github.kittinunf.fuel.httpGet
 import com.github.kittinunf.result.Result
 
-class Act_MenuPrincipalNutricion : AppCompatActivity(),goRecetas {
+class Act_MenuPrincipalNutricion : AppCompatActivity(), goRecetas {
 
     var arrayImagenesURL = arrayListOf<String>()
     val urlPrincipal = "http://192.168.1.4:1337"
@@ -23,23 +23,27 @@ class Act_MenuPrincipalNutricion : AppCompatActivity(),goRecetas {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_act__menu_principal_nutricion)
-        initImageBitmaps()
-        var arrayReceta = arrayListReceta()
+
+       var arrayReceta = arrayListReceta()
         arrayReceta.forEach {
             Log.i("RECETA", "Datos de la receta: ${it}")
         }
+        initImageBitmaps(arrayReceta)
     }
 
-    fun initImageBitmaps(){
-        arrayImagenesURL.add("http://gymvirtual.com/wp-content/uploads/2020/06/minpancakes-veganos-810x456.jpg")
+    fun initImageBitmaps(arrayReceta: ArrayList<RecetaHttp>){
+        /*arrayImagenesURL.add("http://gymvirtual.com/wp-content/uploads/2020/06/minpancakes-veganos-810x456.jpg")
         arrayImagenesURL.add("http://gymvirtual.com/wp-content/uploads/2020/06/PAN-DE-ESPECIAS-810x456.jpg")
-        arrayImagenesURL.add("http://gymvirtual.com/wp-content/uploads/2020/06/COCA-DE-AN--S-810x456.jpg")
+        arrayImagenesURL.add("http://gymvirtual.com/wp-content/uploads/2020/06/COCA-DE-AN--S-810x456.jpg")*/
+        arrayReceta.forEach {
+            arrayImagenesURL.add(it.imagen_rec.toString())
+        }
         initRecyclerView()
     }
 
     fun initRecyclerView(){
         var recyclerView: RecyclerView = findViewById(R.id.rv_menuPrincipal)
-        var adaptador = adaptadorRecyclerView(this,arrayImagenesURL,this)
+        var adaptador = adaptadorRecyclerView(this,arrayImagenesURL)
         recyclerView.setAdapter(adaptador)
         recyclerView.layoutManager = androidx.recyclerview.widget.LinearLayoutManager(this)
         adaptador.notifyDataSetChanged()

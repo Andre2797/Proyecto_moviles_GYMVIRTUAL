@@ -1,8 +1,10 @@
-package com.example.gymvirtual
+package com.example.gymvirtual.MenusYFragmentos
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.RecyclerView
+import com.example.gymvirtual.Adaptadores.adaptadorRecyclerView2
+import com.example.gymvirtual.R
 
 class Act_ejercicio : AppCompatActivity() {
     var arrayImagenesURL = arrayListOf<String>()

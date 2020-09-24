@@ -2,7 +2,8 @@ package com.example.gymvirtual.Menus
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.gymvirtual.PagerController
+import com.example.gymvirtual.MenusYFragmentos.PagerController
+
 import com.example.gymvirtual.R
 
 import kotlinx.android.synthetic.main.activity_actv_menu_principal.*

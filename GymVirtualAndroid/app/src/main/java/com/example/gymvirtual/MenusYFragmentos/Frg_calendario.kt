@@ -7,18 +7,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.gymvirtual.Act_calendario
+import com.example.gymvirtual.Adaptadores.RecyclerAdaptador
+import com.example.gymvirtual.Interfaces.OnCalendario
 import com.example.gymvirtual.R
-import com.example.gymvirtual.Retos
+
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-class Frg_calendario : Fragment(),OnCalendario {
+class Frg_calendario : Fragment(), OnCalendario {
     var titulos: ArrayList<String> = arrayListOf()
     var imagenesURL: ArrayList<String> = arrayListOf()
 
-    var listaRetos= arrayListOf<Retos>()
+    //var listaRetos= arrayListOf<Retos>()
     companion object{
         private const val ARG_OBJECT="object"
     }
