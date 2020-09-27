@@ -23,8 +23,9 @@ module.exports = {
       model: 'rutina'
     }, 
 
-    ejercicio:{
-      model: 'ejercicio'
+    ejerciciosRutinas:{
+      collection: 'ejercicioRutina',
+      via:'ejercicio'
     },
 
     usuarioRutinasEjercicios:{

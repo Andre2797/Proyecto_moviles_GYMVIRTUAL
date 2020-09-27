@@ -1,1 +1,4 @@
 {"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
+{"createdAt":1601083815153,"updatedAt":1601083815153,"id":1,"nombreRutina":"Principante","descripcionRutina":"Rutina de abdominales para principiantes","categoriaRutina":"abdominales","idRutina":0,"_id":1}
+{"createdAt":1601083829256,"updatedAt":1601083829256,"id":2,"nombreRutina":"Principante","descripcionRutina":"Rutina de piernas para principiantes","categoriaRutina":"piernas","idRutina":0,"_id":2}
+{"createdAt":1601083845949,"updatedAt":1601083845949,"id":3,"nombreRutina":"Principante","descripcionRutina":"Rutina de glúteos para principiantes","categoriaRutina":"glúteos","idRutina":0,"_id":3}

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.gymvirtual">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -13,20 +14,22 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Act_ejercicio"></activity>
+        <activity android:name=".Ejercicio.Act_EjerCronometro"></activity>
+        <activity android:name=".Act_ejercicio" />
         <activity android:name=".Act_calendario" />
-        <activity android:name=".Actv_menu_principal" />
-        <activity android:name=".Act_Sexo" />
-        <activity android:name=".Act_peso_registro" />
-        <activity android:name=".Act_edad_registro" />
-        <activity android:name=".Act_Login_Gym" />
-        <activity android:name=".Act_Nombre_Registro" />
-        <activity android:name=".Act_Bienvenido" />
-        <activity android:name=".Act_SexoLogin" />
-        <activity android:name=".Act_CorreoLogin" />
-        <activity android:name=".Act_AlturaLogin" />
+        <activity android:name=".Menus.Actv_menu_principal" />
+        <activity android:name=".Login.Act_Sexo" />
+        <activity android:name=".Login.Act_peso_registro" />
+        <activity android:name=".Login.Act_edad_registro" />
+        <activity android:name=".Login.Act_Login_Gym" />
+        <activity android:name=".Login.Act_Nombre_Registro" />
+        <activity android:name=".Login.Act_Bienvenido" />
+        <activity android:name=".Login.Act_CorreoLogin" />
+        <activity android:name=".Login.Act_AlturaLogin" />
+        <activity android:name="Activities_MenusOpciones.Act_Recetas" />
+        <activity android:name=".Menus.Act_MenuPrincipalNutricion" />
         <activity
-            android:name=".FullscreenActivity"
+            android:name=".Menus.FullscreenActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name"
             android:theme="@style/FullscreenTheme">

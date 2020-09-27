@@ -28,9 +28,8 @@ module.exports = {
       maxLength:400
     }, 
 
-    ejerciciosRutinas:{
-      collection: 'ejercicioRutina',
-      via:'ejercicio'
+    rutina:{
+      model: 'rutina'
     }
 
   },
