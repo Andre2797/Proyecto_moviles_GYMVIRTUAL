@@ -20,9 +20,11 @@ import kotlinx.android.synthetic.main.activity_act__menu_principal_nutricion.*
 
 class adaptadorRecyclerView(
     var contexto : Context,
-    var imagenes : ArrayList<String>
+    var imagenes : ArrayList<String>,
+    var ingredientes: ArrayList<String>,
+    var preparacion : ArrayList<String>,
+    var titulos: ArrayList<String>
 ): RecyclerView.Adapter<adaptadorRecyclerView.MyViewHolder>() {
-
     inner class MyViewHolder(view: View):
         androidx.recyclerview.widget.RecyclerView.ViewHolder(view){
         var imagen:ImageView
@@ -31,7 +33,6 @@ class adaptadorRecyclerView(
             imagen = view.findViewById(R.id.iv_recyclerMenuComida)
         }
     }
-
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int):
@@ -52,10 +53,11 @@ class adaptadorRecyclerView(
             .load(imagenes[position])
             .into(holder.imagen)
         holder.parentLayout.setOnClickListener {
-          //goRecetas.goRecetasItemClick(position)
-            //Toast.makeText(contexto, imagenes[position], Toast.LENGTH_SHORT).show()
             val intent: Intent = Intent(contexto, Act_Recetas::class.java)
             intent.putExtra("imagenURL", imagenes[position])
+            intent.putExtra("ingredientes", ingredientes[position])
+            intent.putExtra("preparacion", preparacion[position])
+            intent.putExtra("nombreReceta", titulos[position])
             contexto.startActivity(intent)
         }
     }

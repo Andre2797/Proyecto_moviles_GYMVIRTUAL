@@ -3,6 +3,7 @@ package Activities_MenusOpciones
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.TextView
 import com.bumptech.glide.Glide
 import com.example.gymvirtual.R
 
@@ -18,6 +19,18 @@ class Act_Recetas : AppCompatActivity() {
             var imagenURL = intent.getStringExtra("imagenURL")
             setImage(imagenURL)
         }
+        if (intent.hasExtra("ingredientes")){
+            var ingredientesF = intent.getStringExtra("ingredientes")
+            setIngredientes(ingredientesF)
+        }
+        if (intent.hasExtra("preparacion")){
+            var preparacionF = intent.getStringExtra("preparacion")
+            setPreparacion(preparacionF)
+        }
+        if (intent.hasExtra("nombreReceta")){
+            var titulosF = intent.getStringExtra("nombreReceta")
+            setPreparacion(titulosF)
+        }
     }
 
     fun setImage(imagenURL: String){
@@ -26,5 +39,20 @@ class Act_Recetas : AppCompatActivity() {
             .asBitmap()
             .load(imagenURL)
             .into(imagen)
+    }
+
+    fun setIngredientes (ingredientesArray: String){
+        var ingredientes: TextView = findViewById(R.id.textView7)
+        ingredientes.setText(ingredientesArray)
+    }
+
+    fun setPreparacion (preparacionArray: String){
+        var preparacionTv: TextView = findViewById(R.id.textView)
+        preparacionTv.setText(preparacionArray)
+    }
+
+    fun setTitulos (titulosArray: String){
+        var tv_titulos: TextView = findViewById(R.id.textView4)
+        tv_titulos.setText(titulosArray)
     }
 }

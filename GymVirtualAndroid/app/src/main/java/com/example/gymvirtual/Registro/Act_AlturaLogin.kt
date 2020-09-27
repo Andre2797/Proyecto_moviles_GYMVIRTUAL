@@ -15,12 +15,7 @@ class Act_AlturaLogin : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_act__altura_login)
-
-        /*if(pesoCompartido != null){
-            Log.i("Intent", "El peso del usuario es: ${pesoCompartido}")
-        }*/
         btn_alturaSig.setOnClickListener {
-           // abrirCorreoLogin()
             enviarAltura()
         }
     }

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.view.View
+import com.example.gymvirtual.Ejercicio.Act_EjerCronometro
 import com.example.gymvirtual.Login.Act_Login_Gym
 import com.example.gymvirtual.Login.Act_Nombre_Registro
 import com.example.gymvirtual.R
@@ -42,21 +43,16 @@ class FullscreenActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         mVisible = true
-
-        // Set up the user interaction to manually show or hide the system UI.
         fullscreen_content.setOnClickListener { toggle() }
 
-        // Upon interacting with UI controls, delay any scheduled hide()
-        // operations to prevent the jarring behavior of controls going away
-        // while interacting with the UI.
-        //dummy_button.setOnTouchListener(mDelayHideTouchListener)
         full_regiter.setOnClickListener {
             abrirNombre_Registro()
         }
 
         full_login.setOnClickListener{
                 //abrirlogin()
-            abrirmenu()
+            //abrirmenu()
+            abrirCronometro()
         }
 
 
@@ -85,6 +81,14 @@ class FullscreenActivity : AppCompatActivity() {
         startActivity(intentExplicito)
     }
 
+    fun abrirCronometro(){
+        val intentExplicito = Intent(
+            this,
+            Act_EjerCronometro::class.java
+
+        )
+        startActivity(intentExplicito)
+    }
     override fun onPostCreate(savedInstanceState: Bundle?) {
         super.onPostCreate(savedInstanceState)
 

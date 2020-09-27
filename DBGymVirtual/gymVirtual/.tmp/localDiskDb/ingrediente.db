@@ -1,34 +1,13 @@
 {"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
-{"createdAt":1600895723695,"updatedAt":1600895723695,"id":1,"receta":null,"idIngrediente":0,"nombreIngrediente":"harina integral","_id":1}
-{"createdAt":1600921326248,"updatedAt":1600921326248,"id":2,"receta":null,"idIngrediente":0,"nombreIngrediente":"leche vegetal","_id":2}
-{"createdAt":1600921347850,"updatedAt":1600921347850,"id":3,"receta":null,"idIngrediente":0,"nombreIngrediente":"huevos","_id":3}
-{"createdAt":1600921373420,"updatedAt":1600921373420,"id":4,"receta":null,"idIngrediente":0,"nombreIngrediente":"miel","_id":4}
-{"createdAt":1600921391375,"updatedAt":1600921391375,"id":5,"receta":null,"idIngrediente":0,"nombreIngrediente":"panela","_id":5}
-{"createdAt":1600921407664,"updatedAt":1600921407664,"id":6,"receta":null,"idIngrediente":0,"nombreIngrediente":"levadura química","_id":6}
-{"createdAt":1600921418485,"updatedAt":1600921418485,"id":7,"receta":null,"idIngrediente":0,"nombreIngrediente":"sal fina","_id":7}
-{"createdAt":1600921428795,"updatedAt":1600921428795,"id":8,"receta":null,"idIngrediente":0,"nombreIngrediente":"Aceite de coco","_id":8}
-{"createdAt":1600921439219,"updatedAt":1600921439219,"id":9,"receta":null,"idIngrediente":0,"nombreIngrediente":"lino molido","_id":9}
-{"createdAt":1600921449134,"updatedAt":1600921449134,"id":10,"receta":null,"idIngrediente":0,"nombreIngrediente":"agua","_id":10}
-{"createdAt":1600921472154,"updatedAt":1600921472154,"id":11,"receta":null,"idIngrediente":0,"nombreIngrediente":"dátiles","_id":11}
-{"createdAt":1600921496850,"updatedAt":1600921496850,"id":12,"receta":null,"idIngrediente":0,"nombreIngrediente":"aceite de oliva","_id":12}
-{"createdAt":1600921515705,"updatedAt":1600921515705,"id":13,"receta":null,"idIngrediente":0,"nombreIngrediente":"Semillas de anís","_id":13}
-{"createdAt":1600921533387,"updatedAt":1600921533387,"id":14,"receta":null,"idIngrediente":0,"nombreIngrediente":"Azúcar","_id":14}
-{"createdAt":1600895723695,"updatedAt":1600962444993,"id":1,"receta":1,"idIngrediente":0,"nombreIngrediente":"harina integral","_id":1}
-{"createdAt":1600921326248,"updatedAt":1600962444993,"id":2,"receta":1,"idIngrediente":0,"nombreIngrediente":"leche vegetal","_id":2}
-{"createdAt":1600921407664,"updatedAt":1600962444993,"id":6,"receta":1,"idIngrediente":0,"nombreIngrediente":"levadura química","_id":6}
-{"createdAt":1600921418485,"updatedAt":1600962444993,"id":7,"receta":1,"idIngrediente":0,"nombreIngrediente":"sal fina","_id":7}
-{"createdAt":1600921428795,"updatedAt":1600962444993,"id":8,"receta":1,"idIngrediente":0,"nombreIngrediente":"Aceite de coco","_id":8}
-{"createdAt":1600921439219,"updatedAt":1600962444993,"id":9,"receta":1,"idIngrediente":0,"nombreIngrediente":"lino molido","_id":9}
-{"createdAt":1600921472154,"updatedAt":1600962444993,"id":11,"receta":1,"idIngrediente":0,"nombreIngrediente":"dátiles","_id":11}
-{"createdAt":1600895723695,"updatedAt":1600962459750,"id":1,"receta":2,"idIngrediente":0,"nombreIngrediente":"harina integral","_id":1}
+{"createdAt":1600895723695,"updatedAt":1600962468032,"id":1,"receta":3,"idIngrediente":0,"nombreIngrediente":"harina integral","_id":1}
 {"createdAt":1600921326248,"updatedAt":1600962459750,"id":2,"receta":2,"idIngrediente":0,"nombreIngrediente":"leche vegetal","_id":2}
 {"createdAt":1600921347850,"updatedAt":1600962459750,"id":3,"receta":2,"idIngrediente":0,"nombreIngrediente":"huevos","_id":3}
 {"createdAt":1600921373420,"updatedAt":1600962459750,"id":4,"receta":2,"idIngrediente":0,"nombreIngrediente":"miel","_id":4}
 {"createdAt":1600921391375,"updatedAt":1600962459750,"id":5,"receta":2,"idIngrediente":0,"nombreIngrediente":"panela","_id":5}
-{"createdAt":1600921407664,"updatedAt":1600962459750,"id":6,"receta":2,"idIngrediente":0,"nombreIngrediente":"levadura química","_id":6}
-{"createdAt":1600895723695,"updatedAt":1600962468032,"id":1,"receta":3,"idIngrediente":0,"nombreIngrediente":"harina integral","_id":1}
 {"createdAt":1600921407664,"updatedAt":1600962468032,"id":6,"receta":3,"idIngrediente":0,"nombreIngrediente":"levadura química","_id":6}
 {"createdAt":1600921418485,"updatedAt":1600962468032,"id":7,"receta":3,"idIngrediente":0,"nombreIngrediente":"sal fina","_id":7}
+{"createdAt":1600921428795,"updatedAt":1600962444993,"id":8,"receta":1,"idIngrediente":0,"nombreIngrediente":"Aceite de coco","_id":8}
+{"createdAt":1600921439219,"updatedAt":1600962444993,"id":9,"receta":1,"idIngrediente":0,"nombreIngrediente":"lino molido","_id":9}
 {"createdAt":1600921449134,"updatedAt":1600962468032,"id":10,"receta":3,"idIngrediente":0,"nombreIngrediente":"agua","_id":10}
 {"createdAt":1600921472154,"updatedAt":1600962468032,"id":11,"receta":3,"idIngrediente":0,"nombreIngrediente":"dátiles","_id":11}
 {"createdAt":1600921496850,"updatedAt":1600962468032,"id":12,"receta":3,"idIngrediente":0,"nombreIngrediente":"aceite de oliva","_id":12}

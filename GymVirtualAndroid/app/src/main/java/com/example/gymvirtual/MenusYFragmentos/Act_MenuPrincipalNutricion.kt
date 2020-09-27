@@ -18,32 +18,32 @@ import com.github.kittinunf.result.Result
 class Act_MenuPrincipalNutricion : AppCompatActivity(), goRecetas {
 
     var arrayImagenesURL = arrayListOf<String>()
-    val urlPrincipal = "http://192.168.1.4:1337"
+    var arrayIngredientes = arrayListOf<String>()
+    var arrayPreparaciones = arrayListOf<String>()
+    var arraytituloReceta = arrayListOf<String>()
+
+    val urlPrincipal = "http://192.168.1.9:1337"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_act__menu_principal_nutricion)
-
        var arrayReceta = arrayListReceta()
-        arrayReceta.forEach {
-            Log.i("RECETA", "Datos de la receta: ${it}")
-        }
         initImageBitmaps(arrayReceta)
     }
 
     fun initImageBitmaps(arrayReceta: ArrayList<RecetaHttp>){
-        /*arrayImagenesURL.add("http://gymvirtual.com/wp-content/uploads/2020/06/minpancakes-veganos-810x456.jpg")
-        arrayImagenesURL.add("http://gymvirtual.com/wp-content/uploads/2020/06/PAN-DE-ESPECIAS-810x456.jpg")
-        arrayImagenesURL.add("http://gymvirtual.com/wp-content/uploads/2020/06/COCA-DE-AN--S-810x456.jpg")*/
         arrayReceta.forEach {
             arrayImagenesURL.add(it.imagen_rec.toString())
+            arrayIngredientes.add(it.ingredientes.toString())
+            arrayPreparaciones.add(it.preparacion_rec.toString())
+            arraytituloReceta.add(it.nombre_rec.toString())
         }
         initRecyclerView()
     }
 
     fun initRecyclerView(){
         var recyclerView: RecyclerView = findViewById(R.id.rv_menuPrincipal)
-        var adaptador = adaptadorRecyclerView(this,arrayImagenesURL)
+        var adaptador = adaptadorRecyclerView(this,arrayImagenesURL, arrayIngredientes, arrayPreparaciones, arraytituloReceta)
         recyclerView.setAdapter(adaptador)
         recyclerView.layoutManager = androidx.recyclerview.widget.LinearLayoutManager(this)
         adaptador.notifyDataSetChanged()

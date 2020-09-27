@@ -6,6 +6,6 @@ class IngredienteHttp(
     var receta: Any?
 ){
     override fun toString(): String {
-        return "El id del ingrediente es: ${id} El nombre del ingrediente es: ${nombre_ingred} "
+        return "${nombre_ingred} \n"
     }
 }
