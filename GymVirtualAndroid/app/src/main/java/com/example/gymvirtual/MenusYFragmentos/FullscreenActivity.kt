@@ -1,23 +1,19 @@
-package com.example.gymvirtual
+package com.example.gymvirtual.Menus
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.view.View
+import com.example.gymvirtual.Ejercicio.Act_EjerCronometro
+import com.example.gymvirtual.Login.Act_Login_Gym
+import com.example.gymvirtual.Login.Act_Nombre_Registro
+import com.example.gymvirtual.R
 import kotlinx.android.synthetic.main.activity_fullscreen.*
 
-/**
- * An example full-screen activity that shows and hides the system UI (i.e.
- * status bar and navigation/system bar) with user interaction.
- */
 class FullscreenActivity : AppCompatActivity() {
     private val mHideHandler = Handler()
     private val mHidePart2Runnable = Runnable {
-        // Delayed removal of status and navigation bar
-
-        // Note that some of these constants are new as of API 16 (Jelly Bean)
-        // and API 19 (KitKat). It is safe to use them, as they are inlined
-        // at compile-time and do nothing on earlier devices.
         fullscreen_content.systemUiVisibility =
                 View.SYSTEM_UI_FLAG_LOW_PROFILE or
                         View.SYSTEM_UI_FLAG_FULLSCREEN or
@@ -27,18 +23,12 @@ class FullscreenActivity : AppCompatActivity() {
                         View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
     }
     private val mShowPart2Runnable = Runnable {
-        // Delayed display of UI elements
         supportActionBar?.show()
         fullscreen_content_controls.visibility = View.VISIBLE
     }
     private var mVisible: Boolean = false
     private val mHideRunnable = Runnable { hide() }
 
-    /**
-     * Touch listener to use for in-layout UI controls to delay hiding the
-     * system UI. This is to prevent the jarring behavior of controls going away
-     * while interacting with activity UI.
-     */
     private val mDelayHideTouchListener = View.OnTouchListener { _, _ ->
         if (AUTO_HIDE) {
             delayedHide(AUTO_HIDE_DELAY_MILLIS)
@@ -53,16 +43,52 @@ class FullscreenActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         mVisible = true
-
-        // Set up the user interaction to manually show or hide the system UI.
         fullscreen_content.setOnClickListener { toggle() }
 
-        // Upon interacting with UI controls, delay any scheduled hide()
-        // operations to prevent the jarring behavior of controls going away
-        // while interacting with the UI.
-        dummy_button.setOnTouchListener(mDelayHideTouchListener)
+        full_regiter.setOnClickListener {
+            abrirNombre_Registro()
+        }
+
+        full_login.setOnClickListener{
+                //abrirlogin()
+            //abrirmenu()
+            abrirCronometro()
+        }
+
+
+    }
+    fun abrirNombre_Registro(){
+        val intentExplicito = Intent(
+            this,
+            Act_Nombre_Registro::class.java
+        )
+        startActivity(intentExplicito)
+    }
+    fun abrirlogin(){
+        val intentExplicito = Intent(
+            this,
+           Act_Login_Gym::class.java
+
+        )
+        startActivity(intentExplicito)
+    }
+    fun abrirmenu(){
+        val intentExplicito = Intent(
+            this,
+            Actv_menu_principal::class.java
+
+        )
+        startActivity(intentExplicito)
     }
 
+    fun abrirCronometro(){
+        val intentExplicito = Intent(
+            this,
+            Act_EjerCronometro::class.java
+
+        )
+        startActivity(intentExplicito)
+    }
     override fun onPostCreate(savedInstanceState: Bundle?) {
         super.onPostCreate(savedInstanceState)
 

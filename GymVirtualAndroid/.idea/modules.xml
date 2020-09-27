@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GymVIRTUAL.iml" filepath="$PROJECT_DIR$/GymVIRTUAL.iml" group="GymVIRTUAL" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/GymVIRTUAL-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/GymVIRTUAL-app.iml" group="GymVIRTUAL/app" />
+      <module fileurl="file://$PROJECT_DIR$/app/GymVirtualAndroid-app.iml" filepath="$PROJECT_DIR$/app/GymVirtualAndroid-app.iml" group="GymVIRTUAL/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="GymVIRTUAL/app" />
     </modules>
   </component>
