@@ -1,6 +1,9 @@
 package com.example.gymvirtual.Menus
 
+import android.content.ComponentName
 import android.content.Intent
+import android.content.pm.PackageManager
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
@@ -8,6 +11,7 @@ import android.view.View
 import com.example.gymvirtual.Ejercicio.Act_EjerCronometro
 import com.example.gymvirtual.Login.Act_Login_Gym
 import com.example.gymvirtual.Login.Act_Nombre_Registro
+import com.example.gymvirtual.MenusYFragmentos.Act_ejercicio
 import com.example.gymvirtual.R
 import kotlinx.android.synthetic.main.activity_fullscreen.*
 
@@ -52,7 +56,8 @@ class FullscreenActivity : AppCompatActivity() {
         full_login.setOnClickListener{
                 //abrirlogin()
             //abrirmenu()
-            abrirCronometro()
+            //abrirCronometro()
+            abrirRetosEjercicio()
         }
 
 
@@ -89,12 +94,17 @@ class FullscreenActivity : AppCompatActivity() {
         )
         startActivity(intentExplicito)
     }
+
+    fun abrirRetosEjercicio(){
+        val intentExplicito = Intent(
+            this,
+            Act_ejercicio::class.java
+
+        )
+        startActivity(intentExplicito)
+    }
     override fun onPostCreate(savedInstanceState: Bundle?) {
         super.onPostCreate(savedInstanceState)
-
-        // Trigger the initial hide() shortly after the activity has been
-        // created, to briefly hint to the user that UI controls
-        // are available.
         delayedHide(100)
     }
 

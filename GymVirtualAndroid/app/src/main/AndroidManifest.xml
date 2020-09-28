@@ -15,8 +15,8 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity android:name=".Ejercicio.Act_EjerCronometro"></activity>
-        <activity android:name=".Act_ejercicio" />
-        <activity android:name=".Act_calendario" />
+        <activity android:name=".MenusYFragmentos.Act_ejercicio" />
+        <activity android:name=".MenusYFragmentos.Act_calendario" />
         <activity android:name=".Menus.Actv_menu_principal" />
         <activity android:name=".Login.Act_Sexo" />
         <activity android:name=".Login.Act_peso_registro" />

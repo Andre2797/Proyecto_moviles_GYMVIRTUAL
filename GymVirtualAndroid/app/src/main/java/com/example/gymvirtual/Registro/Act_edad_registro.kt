@@ -12,10 +12,6 @@ class Act_edad_registro : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_act_edad_registro)
-
-        /*if(nombreCompartido != null){
-            Log.i("Intent", "El nombre de usuario es: ${nombreCompartido}")
-        }*/
         btn_edad.setOnClickListener{
             enviarEdad()
         }

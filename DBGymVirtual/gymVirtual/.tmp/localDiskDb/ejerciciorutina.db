@@ -1,3 +1,5 @@
 {"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
-{"nombre_rutina":"Principante","descripcion_rutina":"Rutina de glúteos para principiantes","categoria_rutina":"glúteos","createdAt":1601083906307,"updatedAt":1601083906307,"id":1,"rutina":null,"ejercicio":null,"idEjerRut":0,"repetEjerRut":2,"_id":1}
-{"$$deleted":true,"_id":1}
+{"ejercicio1":1,"ejercicio2":2,"ejercicio3":3,"ejercicio4":4,"createdAt":1601175532683,"updatedAt":1601175532683,"id":1,"idEjerRut":0,"repetEjerRut":1,"_id":1}
+{"ejercicio1":1,"ejercicio2":5,"ejercicio3":6,"ejercicio4":7,"createdAt":1601175558505,"updatedAt":1601175558505,"id":2,"idEjerRut":0,"repetEjerRut":1,"_id":2}
+{"ejercicio1":9,"ejercicio2":10,"ejercicio3":null,"ejercicio4":null,"createdAt":1601175584904,"updatedAt":1601175584904,"id":3,"idEjerRut":0,"repetEjerRut":1,"_id":3}
+{"ejercicio1":9,"ejercicio2":10,"ejercicio3":null,"ejercicio4":null,"createdAt":1601178595634,"updatedAt":1601178595634,"id":4,"idEjerRut":0,"repetEjerRut":1,"_id":4}

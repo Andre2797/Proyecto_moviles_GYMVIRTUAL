@@ -15,26 +15,29 @@ module.exports = {
     },
     repeticiones_EjeRut:{
       type: 'number',
-      defaultsTo: 2,
+      defaultsTo: 1,
       columnName:'repetEjerRut'
     },
-
-    rutina:{
-      model: 'rutina'
-    }, 
-
-    ejerciciosRutinas:{
+    /*ejercicio1:{
+      model: 'ejercicio'
+    },
+    ejercicio2:{
+      model: 'ejercicio'
+    },
+    ejercicio3:{
+      model: 'ejercicio'
+    },
+    ejercicio4:{
+      model: 'ejercicio'
+    },*/ 
+    /*ejerciciosRutinas:{
       collection: 'ejercicioRutina',
       via:'ejercicio'
     },
-
     usuarioRutinasEjercicios:{
       collection: 'usuarioRutinaEjercicio',
       via: 'ejercicioRutina'
-    }
-
-    
-
+    }*/
   },
 
 };
