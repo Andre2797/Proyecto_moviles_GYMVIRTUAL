@@ -31,28 +31,17 @@ class Frg_nutricion : Fragment(), OnCalendario {
         private const val ARG_OBJECT="object"
     }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?): View? {
         var vista:View=inflater.inflate(R.layout.fragment_frg_nutricion, container, false)
-        /*cargarLista()
-          Log.i("lista_retos",listaRetos.toString())
-          //iniciarRecycleView(listaRetos,requireActivity(),rv_retos_frg!!)
-          return vista*/
-
-
         return vista
     }
 
-
-
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         initImageBitmaps()
         initRecyclerView()
-
-
-
     }
 
 

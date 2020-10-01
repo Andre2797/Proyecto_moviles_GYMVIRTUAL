@@ -54,10 +54,10 @@ class FullscreenActivity : AppCompatActivity() {
         }
 
         full_login.setOnClickListener{
-                //abrirlogin()
+              abrirlogin()
             //abrirmenu()
             //abrirCronometro()
-            abrirRetosEjercicio()
+           // abrirRetosEjercicio()
         }
 
 

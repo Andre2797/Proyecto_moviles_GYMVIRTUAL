@@ -9,19 +9,9 @@ module.exports = {
 
   attributes: {
 
-    id_rolUsuario:{
-      type: 'number',
-      autoIncrement:true,
-      columnName:'idUsuarioRutina'
-    },
-    fechaRealizacion:{
-      type: 'string',
-      defaultsTo: '2020-08-26',
-      columnName: 'FechaRealizacion'
-    },
     tiempoRutina:{
       type: 'number',
-      defaultsTo: 120,
+      defaultsTo: 300,
       columnName: 'tiempoRutina'
     },
 

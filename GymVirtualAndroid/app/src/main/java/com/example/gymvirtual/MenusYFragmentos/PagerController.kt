@@ -16,7 +16,7 @@ class PagerController(fa:FragmentActivity): FragmentStateAdapter(fa) {
     companion object{
         private const val ARG_OBJECT="object"
     }
-    override fun getItemCount(): Int =3
+    override fun getItemCount(): Int =4
 
     override fun createFragment(position: Int): Fragment {
         return when(position){
@@ -24,6 +24,7 @@ class PagerController(fa:FragmentActivity): FragmentStateAdapter(fa) {
             1 -> { Frg_calendario() }
             2 -> { Frg_nutricion()
             }
+            3->{Frg_progresoEjer()}
             else -> frg_meses()
         }
     }

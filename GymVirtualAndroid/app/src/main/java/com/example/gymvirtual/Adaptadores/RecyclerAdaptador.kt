@@ -11,7 +11,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.gymvirtual.Interfaces.OnCalendario
 import com.example.gymvirtual.R
-//import com.example.gymvirtual.Retos
 
 class RecyclerAdaptador(
     var contexto : Context,
@@ -20,23 +19,19 @@ class RecyclerAdaptador(
     var onCalendario: OnCalendario
 ):RecyclerView.Adapter<RecyclerAdaptador.MyViewHolder>() {
 
-    //lateinit var model:ArrayList<Retos>
     lateinit var lsitener:View.OnClickListener
 
     inner class MyViewHolder(view: View) :
         androidx.recyclerview.widget.RecyclerView.ViewHolder(view) {
         var titulo: TextView
-
         var imagen:ImageView
-        var parentLayout:RelativeLayout= view.findViewById(R.id.id_relativeLayout)
+        var parentLayout:RelativeLayout= view.findViewById(R.id.id_relativeLayout2)
 
         init {
             titulo = view.findViewById(R.id.titulo)
-
             imagen = view.findViewById(R.id.id_abdomen)
             view.setOnClickListener{
                 val position:Int=adapterPosition
-
             }
         }
     }
@@ -44,7 +39,6 @@ class RecyclerAdaptador(
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val itemView= LayoutInflater.from(parent.context)
             .inflate(R.layout.rv_retos,parent,false)
-
         return  MyViewHolder(itemView)
     }
 
@@ -53,16 +47,10 @@ class RecyclerAdaptador(
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-       //posision
-        // val retos=listaretos[position]
-        // holder.titulo.text =retos.titulo
-        // holder.descripcion.text = retos.descripcion
-        // holder.imagen.setImageResource(retos.imagen)
         Glide.with(contexto)
             .asBitmap()
             .load(imagenes[position])
             .into(holder.imagen)
-
         holder.titulo.setText(titulos[position])
         holder.parentLayout.setOnClickListener {
             onCalendario.onCalendarioItemClick(position)

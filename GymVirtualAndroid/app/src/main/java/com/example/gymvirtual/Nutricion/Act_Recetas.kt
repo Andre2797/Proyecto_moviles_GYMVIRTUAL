@@ -21,7 +21,7 @@ class Act_Recetas : AppCompatActivity() {
         }
         if (intent.hasExtra("ingredientes")){
             var ingredientesF = intent.getStringExtra("ingredientes")
-            setIngredientes(ingredientesF)
+            setIngredientes("Ingredientes: "+ingredientesF)
         }
         if (intent.hasExtra("preparacion")){
             var preparacionF = intent.getStringExtra("preparacion")
@@ -29,7 +29,7 @@ class Act_Recetas : AppCompatActivity() {
         }
         if (intent.hasExtra("nombreReceta")){
             var titulosF = intent.getStringExtra("nombreReceta")
-            setPreparacion(titulosF)
+            setTitulos(titulosF)
         }
     }
 

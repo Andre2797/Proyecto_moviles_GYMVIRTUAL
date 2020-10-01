@@ -9,7 +9,7 @@ module.exports = {
 
   attributes: {
     id_usuario:{
-      type: 'number',
+      type: 'string',
       autoIncrement:true,
       columnName:'idUsuario'
     },
@@ -22,10 +22,9 @@ module.exports = {
     },
 
     edad_usu:{
-      type: 'number',
-      defaultsTo:15,
-      columnName: 'edadUsuario',
-      isInteger:true
+      type: 'string',
+      defaultsTo:'15',
+      columnName: 'edadUsuario'
     },
 
     sexo_usu:{
@@ -36,16 +35,17 @@ module.exports = {
     },
 
     altura_usu:{
-      type: 'float',
+      type: 'string',
       required:true,
       columnName: 'alturaUsuario',
     },
 
     peso_usu:{
-      type: 'float',
+      type: 'string',
       required:true,
       columnName: 'pesoUsuario',
     },
+    
     correo_usu:{
       type: 'string',
       required:true,
@@ -56,7 +56,6 @@ module.exports = {
 
     contrasenia_usu:{
       type: 'string',
-      required: true,
       columnName: 'contraseniaUsuario'
     },
 

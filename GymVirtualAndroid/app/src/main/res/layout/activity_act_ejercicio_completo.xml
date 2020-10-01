@@ -7,13 +7,12 @@
     tools:context=".MenusYFragmentos.Act_ejercicio">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_ejercicio"
+        android:id="@+id/rv_ejercicioCompletos"
         android:layout_width="354dp"
         android:layout_height="414dp"
         android:layout_marginBottom="64dp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_comenzarEntrenamiento"
+        app:layout_constraintBottom_toTopOf="@+id/btn_finalizarEntrenamiento"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
@@ -60,11 +59,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_comenzarEntrenamiento"
+        android:id="@+id/btn_finalizarEntrenamiento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/boton_redondo"
-        android:text="COMENZAR"
+        android:text="FINALIZAR"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"

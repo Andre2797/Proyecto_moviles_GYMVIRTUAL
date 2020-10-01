@@ -1,1 +1,6 @@
 {"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
+{"createdAt":1601537061724,"updatedAt":1601537061724,"id":1,"tiempoRutina":300,"usuario":1,"rutina":1,"_id":1}
+{"createdAt":1601537099572,"updatedAt":1601537099572,"id":2,"tiempoRutina":300,"usuario":1,"rutina":1,"_id":2}
+{"usuario":2,"rutina":1,"createdAt":1601568598516,"updatedAt":1601568598516,"id":3,"tiempoRutina":300,"_id":3}
+{"usuario":2,"rutina":1,"createdAt":1601568974224,"updatedAt":1601568974224,"id":4,"tiempoRutina":300,"_id":4}
+{"usuario":2,"rutina":1,"createdAt":1601569240226,"updatedAt":1601569240226,"id":5,"tiempoRutina":300,"_id":5}

@@ -22,7 +22,7 @@ class Act_MenuPrincipalNutricion : AppCompatActivity(), goRecetas {
     var arrayPreparaciones = arrayListOf<String>()
     var arraytituloReceta = arrayListOf<String>()
 
-    val urlPrincipal = "http://192.168.1.5:1337"
+    val urlPrincipal = "http://192.168.1.4:1337"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

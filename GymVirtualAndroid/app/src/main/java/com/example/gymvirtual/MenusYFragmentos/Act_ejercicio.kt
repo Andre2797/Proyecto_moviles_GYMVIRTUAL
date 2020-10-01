@@ -27,11 +27,7 @@ class Act_ejercicio : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_act_ejercicio)
-
         arrayRutina = arrayListEjercicioRutina()
-        arrayRutina.forEach {
-            Log.i("Ejercicio", "Ejercicio es: ${it}")
-        }
         initImageBitmaps(arrayRutina)
         btn_comenzarEntrenamiento.setOnClickListener {
             irComenzarEjercicios()
@@ -88,18 +84,5 @@ class Act_ejercicio : AppCompatActivity() {
         val arrayEjercicioHttp = arrayListEjercicioRutina()
         intentExplicito.putExtra("arregloEjercicios", arrayEjercicioHttp)
         startActivity(intentExplicito)
-    }
-
-    fun enviarEdad(){
-        val intentExplicito = Intent(
-            this,
-            Act_ejercicio::class.java
-        )
-
-        startActivity(intentExplicito)
-        /*nombreCompartido = intent.getStringExtra("nombre")
-        intentExplicito.putExtra("edad", et_edad.text.toString().toInt())
-        intentExplicito.putExtra("nombre",nombreCompartido )
-        startActivity(intentExplicito)*/
     }
 }

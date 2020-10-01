@@ -34,6 +34,13 @@
             android:layout_height="wrap_content"
             android:icon="@drawable/nutricion"
             android:text="Nutrición" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/historico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/historico"
+            android:text="Progreso" />
     </com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager2.widget.ViewPager2

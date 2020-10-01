@@ -12,7 +12,9 @@ import android.widget.ImageView
 import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.isInvisible
 import com.bumptech.glide.Glide
+import com.example.gymvirtual.Login.Act_Nombre_Registro
 import com.example.gymvirtual.Modelo.EjercicioHttp
 import com.example.gymvirtual.R
 import kotlinx.android.synthetic.main.activity_act__ejer_cronometro.*
@@ -26,8 +28,7 @@ class  Act_EjerCronometro : AppCompatActivity() {
     lateinit var iv_imagenEjercicio: ImageView
     var listaImagenes = arrayListOf<String>()
     var listaTitulos = arrayListOf<String>()
-
-
+    var contador = 0
     var indexImagenes = 0
     val handler: Handler = Handler()
 
@@ -49,15 +50,21 @@ class  Act_EjerCronometro : AppCompatActivity() {
                         listaTitulos.add(it.nombre_ejercicio.toString())
                         ponerTitulosImagen(listaTitulos,listaImagenes)
                         btn_siguienteEjercicio.setOnClickListener { iterador: View ->
-                            if (it.url_ejercicio != ""){
-                                Log.i("Youtube", "url: ${it.url_ejercicio}")
-                                var uri: Uri = Uri.parse(it.url_ejercicio)
-                                val intent = Intent(Intent.ACTION_VIEW, uri)
-                                startActivity(intent)
-                            }else{
-                                indexImagenes = indexImagenes + 1
+
+                            contador += 1
+                            if(contador == 3){
+                                abrirEjercicioCompleto()
+                            }
+                            indexImagenes = indexImagenes + 1
                                 ponerTitulosImagen(listaTitulos,listaImagenes)
                                 reiniciarCronometro()
+                            if (it.url_ejercicio != ""){
+                                iv_imagenEjercicio.setOnClickListener {iterador2 ->
+                                    Log.i("Youtube", "url: ${it.url_ejercicio}")
+                                    var uri: Uri = Uri.parse(it.url_ejercicio)
+                                    val intent = Intent(Intent.ACTION_VIEW, uri)
+                                    startActivity(intent)
+                                }
                             }
                         }
                 }
@@ -81,7 +88,7 @@ class  Act_EjerCronometro : AppCompatActivity() {
         var i = 0
         handler.postDelayed(object : Runnable {
             override fun run() {
-                if (i <= 10) {
+                if (i <= 100) {
                     progressText.text = "" + i
                     progressBar.progress = i
                     i++
@@ -94,6 +101,12 @@ class  Act_EjerCronometro : AppCompatActivity() {
         i = 0
     }
 
-
+    fun abrirEjercicioCompleto(){
+        val intentExplicito = Intent(
+            this,
+            Act_Ejercicio_Completo::class.java
+        )
+        startActivity(intentExplicito)
+    }
 
 }

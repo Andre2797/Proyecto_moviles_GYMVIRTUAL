@@ -1,1 +1,3 @@
 {"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
+{"createdAt":1601529272114,"updatedAt":1601529272114,"id":1,"idUsuario":"0","nombreUsuario":"Nicole Ontaneda ","edadUsuario":"22","sexoUsuario":"M","alturaUsuario":"151","pesoUsuario":"51","correoUsuario":"nicole.ontaneda@epn.edu.ec","contraseniaUsuario":"123","_id":1}
+{"createdAt":1601567180439,"updatedAt":1601567180439,"id":2,"nombreUsuario":"Adriana García ","edadUsuario":"22","pesoUsuario":"56.0","alturaUsuario":"161.0","correoUsuario":"nicole.ontaneda@epn.edu.ec","sexoUsuario":"M","contraseniaUsuario":"123","idUsuario":"","_id":2}

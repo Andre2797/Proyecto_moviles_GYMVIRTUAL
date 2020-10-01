@@ -31,6 +31,10 @@ class Actv_menu_principal : AppCompatActivity() {
                         tab.text = "Nutrición"
                         tab.setIcon(R.drawable.nutricion)
                     }
+                    3 -> {
+                        tab.text = "Progreso"
+                        tab.setIcon(R.drawable.historico)
+                    }
                 }
             })
         tabLayoutMediator.attach()

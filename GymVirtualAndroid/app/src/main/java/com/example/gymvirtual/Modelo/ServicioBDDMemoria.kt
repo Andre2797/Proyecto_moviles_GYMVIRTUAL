@@ -53,35 +53,6 @@ class ServicioBDDMemoria (){
             return miConvertidorRecetaHttp
         }
 
-      /*  fun convertidorEjercicio(): Converter {
-            val miConvertidorEjercicioHttp = object : Converter {
-                override fun canConvert(cls: Class<*>) = cls == EjercicioHttp::class.java
-
-                override fun toJson(value: Any): String =
-                    """{"flag" : "${if ((value as EjercicioHttp).url_ejercicio == true) 1 else 0}"""
-
-                override fun fromJson(jv: JsonValue): EjercicioHttp {
-                    return if (jv.obj?.get("rutina") is Int) {
-                        EjercicioHttp(
-                            jv.objInt("id"),
-                            jv.objString("nombre_ejercicio"),
-                            jv.objString("url_ejercicio"),
-                            jv.objString("")
-                            jv.objString("rutina")
-                        )
-                    } else {
-                        EjercicioHttp(
-                            jv.objInt("id"),
-                            jv.objString("nombre_ejercicio"),
-                            jv.objString("url_ejercicio"),
-                            Klaxon().parseFromJsonObject<RecetaHttp>(jv.obj?.get("rutina") as JsonObject)
-                        )
-                    }
-                }
-            }
-            return miConvertidorEjercicioHttp
-        }*/
-
         fun convertidorRutina(): Converter {
             val miConvertidorRutinaHttp = object : Converter {
                 override fun canConvert(cls: Class<*>) = cls == RutinaHttp::class.java
