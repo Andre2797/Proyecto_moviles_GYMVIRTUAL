@@ -40,14 +40,9 @@ class Frg_calendario : Fragment(), OnCalendario {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
                 initImageBitmaps()
                 initRecyclerView()
-
-
-
     }
-
 
     /*fun iniciarRecycleView(
         listaRetos:ArrayList<Retos>,
@@ -72,7 +67,6 @@ class Frg_calendario : Fragment(), OnCalendario {
         titulos.add("Brazos")
         imagenesURL.add("https://static2.abc.es/media/bienestar/2020/04/05/ejercicios-piernas-kjD--620x349@abc.jpg")
         titulos.add("Piernas")
-
     }
 
     fun initRecyclerView(){

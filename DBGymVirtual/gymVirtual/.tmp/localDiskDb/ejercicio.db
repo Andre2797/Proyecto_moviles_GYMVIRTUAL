@@ -1,11 +1,8 @@
 {"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
-{"createdAt":1601083202391,"updatedAt":1601083202391,"id":1,"nombreEjercicio":"Plancha","urlEjercicio":"","idEjercicio":0,"_id":1}
-{"createdAt":1601083266914,"updatedAt":1601083266914,"id":2,"nombreEjercicio":"Plancha Brazos Estirados","urlEjercicio":"","idEjercicio":0,"_id":2}
-{"createdAt":1601083284558,"updatedAt":1601083284558,"id":3,"nombreEjercicio":"Plancha lateral a un lado","urlEjercicio":"","idEjercicio":0,"_id":3}
-{"createdAt":1601083306674,"updatedAt":1601083306674,"id":4,"nombreEjercicio":"Plancha lateral dinámica","urlEjercicio":"","idEjercicio":0,"_id":4}
-{"createdAt":1601083349895,"updatedAt":1601083349895,"id":5,"nombreEjercicio":"Abdominales con mancuernas","urlEjercicio":"https://www.youtube.com/watch?v=DypJnnW8E8s&feature=emb_logo&ab_channel=gymvirtual","idEjercicio":0,"_id":5}
-{"createdAt":1601083373687,"updatedAt":1601083373687,"id":6,"nombreEjercicio":"Pasitos en Cuadrupeda","urlEjercicio":"","idEjercicio":0,"_id":6}
-{"createdAt":1601083386308,"updatedAt":1601083386308,"id":7,"nombreEjercicio":"Plancha Pirámide","urlEjercicio":"","idEjercicio":0,"_id":7}
-{"createdAt":1601083426664,"updatedAt":1601083426664,"id":8,"nombreEjercicio":"Abdominales de pie","urlEjercicio":"https://www.youtube.com/watch?v=5rXPhRknX7U&feature=emb_logo&ab_channel=gymvirtual","idEjercicio":0,"_id":8}
-{"createdAt":1601083471303,"updatedAt":1601083471303,"id":9,"nombreEjercicio":"Rutina de Abdominales vientre plano","urlEjercicio":"https://www.youtube.com/watch?v=ySg0w5Q6GCU&feature=emb_logo&ab_channel=gymvirtual","idEjercicio":0,"_id":9}
-{"createdAt":1601083504164,"updatedAt":1601083504164,"id":10,"nombreEjercicio":"Rutina Intensa de Abdominales vientre plano","urlEjercicio":"https://www.youtube.com/watch?v=Pvxj-1dgVk0&feature=emb_logo&ab_channel=gymvirtual","idEjercicio":0,"_id":10}
+{"createdAt":1601180270660,"updatedAt":1601238021350,"id":1,"tiempo":"100 segundos","rutina":1,"nombreEjercicio":"Plancha Pirámide","urlEjercicio":"","urlImagen":"https://2.bp.blogspot.com/-9eiKvZVD4Lc/WUDyepDwzMI/AAAAAAAAAG4/OV2B5hFZicAfld6jO3AaeHrX3MTtOi52wCLcBGAs/s1600/plancha%2Bbrazos%2Bestirados.png","_id":1}
+{"createdAt":1601237899095,"updatedAt":1601238021350,"id":2,"tiempo":"100 segundos","rutina":1,"nombreEjercicio":"Plancha de Lado","urlEjercicio":"","urlImagen":"https://rutinaejercicio.com/wp-content/uploads/2018/12/241.gif","_id":2}
+{"createdAt":1601266906932,"updatedAt":1601266906932,"id":3,"tiempo":"100 segundos","rutina":null,"nombreEjercicio":"Abdominales de pie","urlEjercicio":"https://www.youtube.com/watch?v=5rXPhRknX7U&feature=emb_logo&ab_channel=gymvirtual","urlImagen":"","_id":3}
+{"$$deleted":true,"_id":3}
+{"createdAt":1601266906932,"updatedAt":1601266944730,"id":3,"tiempo":"100 segundos","rutina":1,"nombreEjercicio":"Abdominales de pie","urlEjercicio":"https://www.youtube.com/watch?v=5rXPhRknX7U&feature=emb_logo&ab_channel=gymvirtual","urlImagen":"","_id":3}
+{"$$deleted":true,"_id":3}
+{"createdAt":1601266906932,"updatedAt":1601267165518,"id":3,"tiempo":"100 segundos","rutina":1,"nombreEjercicio":"Abdominales de pie","urlEjercicio":"https://www.youtube.com/watch?v=5rXPhRknX7U&feature=emb_logo&ab_channel=gymvirtual","urlImagen":"https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/YouTube_social_white_square_%282017%29.svg/1200px-YouTube_social_white_square_%282017%29.svg.png","_id":3}

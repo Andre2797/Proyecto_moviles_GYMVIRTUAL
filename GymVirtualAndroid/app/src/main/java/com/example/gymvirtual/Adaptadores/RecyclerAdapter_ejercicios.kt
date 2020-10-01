@@ -1,6 +1,8 @@
 package com.example.gymvirtual.Adaptadores
 
+import Activities_MenusOpciones.Act_Recetas
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,24 +11,26 @@ import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.gymvirtual.MenusYFragmentos.Act_ejercicio
 import com.example.gymvirtual.R
 
 class adaptadorRecyclerView2(
     var contexto : Context,
     var imagenes : ArrayList<String>,
     var titulos : ArrayList<String>,
-
+    var tiempos: ArrayList<String>
 ): RecyclerView.Adapter<adaptadorRecyclerView2.MyViewHolder>() {
     inner class MyViewHolder(view: View) :
         androidx.recyclerview.widget.RecyclerView.ViewHolder(view) {
         var titulo: TextView
         var imagen: ImageView
+        var tiempo: TextView
         var parentLayout: RelativeLayout = view.findViewById(R.id.id_relativeLayout)
 
         init {
             imagen = view.findViewById(R.id.id_abdomen)
-            titulo = view.findViewById(R.id.titulo)
-
+            titulo = view.findViewById(R.id.tv_tituloEjercicio)
+            tiempo = view.findViewById(R.id.tv_tiempoEjercicio)
         }
     }
 
@@ -52,7 +56,8 @@ class adaptadorRecyclerView2(
             .asBitmap()
             .load(imagenes[position])
             .into(holder.imagen)
-        //holder.titulo.setText(titulos[position])
+        holder.titulo.setText(titulos[position])
+        holder.tiempo.setText(tiempos[position])
         holder.parentLayout.setOnClickListener {
 
         }

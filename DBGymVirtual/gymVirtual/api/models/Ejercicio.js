@@ -8,11 +8,6 @@
 module.exports = {
 
   attributes: {
-    id_ejercicio:{
-      type: 'number',
-      autoIncrement:true,
-      columnName:'idEjercicio'
-    },
 
     nombre_ejercicio:{
       type: 'string',
@@ -25,12 +20,23 @@ module.exports = {
       type: 'string',
       defaultsTo: 'None',
       columnName:'urlEjercicio',
-      maxLength:400
+      maxLength:5000
     }, 
+    url_Imagen:{
+      type: 'string',
+      defaultsTo: '',
+      columnName:'urlImagen',
+      maxLength:400
+    },
+
+    tiempo:{
+      type: 'string',
+      defaultsTo:"100 segundos",
+    },
 
     rutina:{
       model: 'rutina'
-    }
+    }, 
 
   },
 
